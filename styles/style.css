@@ -1,4 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+
+body {
     font-family: "Work Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared Style */
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-color {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.text-gray {
+    color: rgb(66, 66, 66);
+}
+
+.text-lightgray {
+    color: rgb(114, 114, 114);
+}
+main,footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.margin{
+    margin: 100px 0;
+}
+.section-title h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Style */
+header{
+    padding: 50px 0;
+}
+nav {
+    justify-content: space-between;
+}
+
+nav ul {
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 3rem;
+    font-weight: 700px;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+nav,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner {
+    text-align: center;
+}
+.banner-title{
+    margin-top: 200px;
+}
+.banner-title h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.btn-primary {
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background: rgb(255, 144, 14);
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    margin: 32px 0;
+}
+.banner-image{
+    width: 100%;
+}
+/* Header End */
+.teams{
+    align-items: center;
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.section-title #span-1{
+    font-weight: 500px;
+}
+#span-2{
+    color: rgb(255, 144, 14);
+}
+.section-title p{
+    margin-top: 25px;
+}
+.section-titles{
+    margin-left: 75px;
+    max-width: 530px;
+}
+/* Feature Will enjoy */
+#enjoy-headding{
+    border-left: 5px solid  rgb(255, 144, 14);
+    padding: 0 25px;
+}
+.feature-enjoy{
+    gap: 140px;
+}
+.card{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.card p{
+    margin-top: 10px;
+}
+.card-image{
+    width: 100%;
+}
+.card-image img{
+    width: 100%;
+}
+.card-image #e-btn{
+    padding: 46px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.card-image .year{
+    font-size: 4rem;
+    font-weight: 700px;
+}
+.card-image .experience{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+/* End */
+/* Some Facts */
+.fact-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 80px;
+}
+.fact-card{
+    text-align:center;
+    border: 1px solid rgb(255, 144, 14);
+    width: 240px;height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    border-radius: 8px;
+    
+}
+.fact-card h4{
+    font-size: 3rem;
+    font-weight: 600px;
+}
+.fact-card p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Our Sponspors */
+.Sponspors{
+    text-align: center;
+}
+.sites{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 80px 0;
+    gap: 40px;
+}
+/* Footer */
+.footer{
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width:576px){
+    nav,nav ul,.teams,.feature-enjoy{
+        flex-direction: column;
+    }
+    nav h3{
+        font-size: 2.25rem;
+
+    }
+    nav{
+        text-align: center;
+    }
+    nav ul li a{
+        margin-right: 0px;
+        
+    }
+    .banner-title{
+        margin-top: 100px;
+    }
+    .banner-title h2{
+        font-size: 3rem;
+    }
+    .banner-title p{
+        font-size: 1rem;
+    }
+    .team-image{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-titles{
+        margin-top: 40px;
+        margin-left: 55px;
+        text-align: left;
+    }
+    .feature-enjoy{
+        gap: 10px;
+    }
+    .card-image{
+        text-align: center;
+    }
+    .card-image #e-btn{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .fact-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .fact-card{
+        margin: 20px 0;
+    }
+    .some-fact{
+        text-align: center;
+    }
+    .sites{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    
+
+ }
+
+
+/* Medium Devices Design */
+@media screen and (min-width:576px) and (max-width:991px){
+    nav,nav ul,.teams,.feature-enjoy{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-title{
+        margin-top: 100px;
+    }
+    .section-titles{
+        margin-top: 40px;
+        text-align: left;
+    }
+    .fact-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sites{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
